@@ -3,6 +3,7 @@ package cg.wbd.grandemonstration.logger;
 import org.aspectj.lang.JoinPoint;
 import org.aspectj.lang.annotation.AfterThrowing;
 import org.aspectj.lang.annotation.Aspect;
+import org.aspectj.lang.annotation.Before;
 import org.springframework.stereotype.Component;
 
 import java.util.Arrays;
@@ -10,6 +11,7 @@ import java.util.Arrays;
 @Aspect
 @Component
 public class Logger {
+
     public void error(){
         System.out.println("[CMS] ERROR!");
     }
